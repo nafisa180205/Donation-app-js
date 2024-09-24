@@ -1,21 +1,41 @@
-const menuButton = document.getElementById('menu-btn')
-const mobileMenu =document.getElementById('mobile-menu')
-const selectedSeatElement = document.getElementById('selected-seat')
-const totalBookedElement = document.getElementById('total-booked')
-const availableSeatElement = document.getElementById('available-seat')
-const totalPriceElement = document.getElementById('total-price')
-const couponInputElement = document.getElementById('coupon-input')
-const couponButtonElement = document.getElementById('coupon-btn')
-const defaultTextElement = document.getElementById('default-text')
-const grandTotalElement = document.getElementById('grand-total')
-const phoneNumberElement = document.getElementById('phone-number')
-const NextButtonElement = document.getElementById('next-btn')
+const TotalBalance = document.getElementById('total-balance')
+const donationBtn = document.getElementById('donation-btn')
+const historyBtn = document.getElementById('history-btn')
+const donationSection = document.getElementById('donation-section')
+const historySection = document.getElementById('history-section')
+const homeBtn = document.getElementById('home-btn')
+const blogBtn = document.getElementById('blog-btn')
+
+console.log(TotalBalance)
 
 
-menuButton.addEventListener('click' , function(){
-    menuButton.children[0].classList.toggle('hidden')
-    const closeButton = document.getElementById('close-btn')
-    closeButton.classList.toggle('hidden')
-    mobileMenu.classList.toggle('hidden')
-    
+function toggleSectionId(id){
+    donationSection.classList.add('hidden')
+    historySection.classList.add('hidden')
+
+    document.getElementById(id).classList.remove('hidden')
+}
+
+donationBtn.addEventListener('click',function(event){
+    event.preventDefault()
+    toggleSectionId('donation-section')
+    donationBtn.classList.add('bg-[#B4F461]')
+    donationBtn.classList.remove('border-slate-400')
+    historyBtn.classList.remove('bg-[#B4F461]')
+    historyBtn.classList.add('border-slate-400')
+
+
 })
+
+historyBtn.addEventListener('click',function(event){
+    event.preventDefault()
+    toggleSectionId('history-section')
+    historyBtn.classList.add('bg-[#B4F461]')
+    historyBtn.classList.remove('border-slate-400')
+    donationBtn.classList.remove('bg-[#B4F461]')
+    donationBtn.classList.add('border-slate-400')
+
+})
+
+
+
