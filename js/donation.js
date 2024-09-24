@@ -38,7 +38,7 @@ document.getElementById('feni-donation-btn').addEventListener('click' , function
 
       document.getElementById('history-section').appendChild(Div)
 
-        // document.getElementById('my_modal_1').showModal()
+        document.getElementById('my_modal_1').showModal()
          
 
         
@@ -67,7 +67,7 @@ document.getElementById('quota-donation-btn').addEventListener('click' , functio
         document.getElementById('total-donation-quota').innerText = finalDonationAmount
         document.getElementById('total-balance').innerText = finalBalance
 
-        // document.getElementById('my_modal_1').showModal();
+         document.getElementById('my_modal_1').showModal();
         
         const quota = document.getElementById('quota').innerText
         const date = new Date();
@@ -88,8 +88,8 @@ document.getElementById('quota-donation-btn').addEventListener('click' , functio
 
       document.getElementById('history-section').appendChild(Div)
 
-        //  document.getElementById('my_modal_1').showModal()
-        //  document.getElementById('my_modal_1').close()
+         document.getElementById('my_modal_1').showModal()
+        
         
     }
 

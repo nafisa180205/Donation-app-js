@@ -39,7 +39,7 @@ function getTextFieldValueById(id){
 
 
 document.getElementById('noakhali-donation-btn').addEventListener('click' , function(event){
-    event.preventDefault()
+    // event.preventDefault()
 
     const donationAmount = getInputFieldValueById('noakhali-donation-input')
     const balance =  getTextFieldValueById('total-balance')
@@ -78,12 +78,16 @@ document.getElementById('noakhali-donation-btn').addEventListener('click' , func
 
       document.getElementById('history-section').appendChild(Div)
 
-         document.getElementById('my_modal_1').showModal()
-        //  document.getElementById('my_modal_1').close()
+        document.getElementById('my_modal_1').showModal()
+         
         
     }
 
 
+})
+
+document.getElementById('modal-btn').addEventListener('click',function(){
+    document.getElementById('my_modal_1').close()
 })
 
 donationBtn.addEventListener('click',function(event){

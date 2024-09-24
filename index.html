@@ -44,8 +44,8 @@
     <main class="relative top-44 w-full">
       <!-- banner buttons -->
       <section class="w-11/12 mx-auto flex justify-center items-center gap-4 pt-14  fixed  overflow-hidden top-20 backdrop-blur-sm">
-        <button id="donation-btn" class="btn px-10 border  text-xl font-semibold bg-[#B4F461]">Donation</button>
-        <button id="history-btn" class="btn px-10 border border-slate-400 text-xl font-semibold">History</button>
+        <button id="donation-btn" class="btn md:px-10 px-3 border  md:text-xl text-lg font-semibold bg-[#B4F461]">Donation</button>
+        <button id="history-btn" class="btn md:px-10 px-3 border border-slate-400 md:text-xl text-lg font-semibold">History</button>
       </section>
 
       <!-- donation pannel  -->
@@ -119,9 +119,9 @@
             </p>
             <p class="text-xl font-bold text-center">Successfully</p>
             <div class="modal-action flex  justify-center items-center">
-              <form method="dialog ">
+              <form method="dialog">
                 <!-- if there is a button in form, it will close the modal -->
-                <button class="btn">Close Confirmation</button>
+                <button type="button" class="btn" id="modal-btn">Close Confirmation</button>
               </form>
             </div>
           </div>
