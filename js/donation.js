@@ -36,17 +36,10 @@ document.getElementById('feni-donation-btn').addEventListener('click' , function
         <span> ${date} </span>
         </p>`
 
-      document.getElementById('history-section').appendChild(Div)
-
+        document.getElementById('history-section').appendChild(Div)
         document.getElementById('my_modal_1').showModal()
-
-        document.getElementById('feni-donation-input').value = ''
-         
-
-        
+        document.getElementById('feni-donation-input').value = ''           
     }
-
-
 })
 
 
@@ -92,10 +85,7 @@ document.getElementById('quota-donation-btn').addEventListener('click' , functio
 
          document.getElementById('my_modal_1').showModal()
 
-        document.getElementById('quota-donation-input').value = ''
-        
+        document.getElementById('quota-donation-input').value = '' 
         
     }
-
-
 })

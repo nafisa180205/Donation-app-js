@@ -1,4 +1,3 @@
-
 const donationBtn = document.getElementById('donation-btn')
 const historyBtn = document.getElementById('history-btn')
 const donationSection = document.getElementById('donation-section')
@@ -116,15 +115,7 @@ historyBtn.addEventListener('click',function(event){
 
 })
 
-// document.getElementById('blog-btn').addEventListener('click' , function(event){
-//     event.preventDefault()
 
-//     window.location.href = './blog.html'
-// })
-
-// document.getElementById('home-btn').addEventListener('click' , function(){
-//     window.location.href = './index.html'
-// })
 
 
 
