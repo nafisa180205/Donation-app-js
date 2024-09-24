@@ -10,7 +10,7 @@
 - Feel free to modify the color or design, but ensure the design is visually appealing and professional.
 - You are **not allowed** to use any JavaScript library or framework for this assignment.
 
-## Design
+## Design (done)
 
 - **Navbar**: Create a visually appealing navbar with the following structure:
   - Logo positioned in the middle.
