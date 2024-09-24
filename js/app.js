@@ -47,8 +47,8 @@ document.getElementById('noakhali-donation-btn').addEventListener('click' , func
     console.log(totalDonation)
     
 
-    if(isNaN(donationAmount) || donationAmount < 0 || donationAmount > balance){
-        return alert('input valid number')  
+    if(isNaN(donationAmount) || donationAmount <= 0 || donationAmount > balance){
+        return alert('Input Valid Amount')  
     }
 
     else{
@@ -79,6 +79,8 @@ document.getElementById('noakhali-donation-btn').addEventListener('click' , func
       document.getElementById('history-section').appendChild(Div)
 
         document.getElementById('my_modal_1').showModal()
+
+        document.getElementById('noakhali-donation-input').value = ''
          
         
     }

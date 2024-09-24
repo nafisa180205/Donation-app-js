@@ -8,7 +8,7 @@ document.getElementById('feni-donation-btn').addEventListener('click' , function
     
 
     if(isNaN(donationAmount) || donationAmount < 0 || donationAmount > balance){
-        return alert('input valid number')  
+        return alert('Input Valid Amount')  
     }
 
     else{
@@ -39,6 +39,8 @@ document.getElementById('feni-donation-btn').addEventListener('click' , function
       document.getElementById('history-section').appendChild(Div)
 
         document.getElementById('my_modal_1').showModal()
+
+        document.getElementById('feni-donation-input').value = ''
          
 
         
@@ -58,7 +60,7 @@ document.getElementById('quota-donation-btn').addEventListener('click' , functio
     
 
     if(isNaN(donationAmount) || donationAmount < 0 || donationAmount > balance){
-        return alert('input valid number')  
+        return alert('Input Valid Amount')  
     }
 
     else{
@@ -89,6 +91,8 @@ document.getElementById('quota-donation-btn').addEventListener('click' , functio
       document.getElementById('history-section').appendChild(Div)
 
          document.getElementById('my_modal_1').showModal()
+
+        document.getElementById('quota-donation-input').value = ''
         
         
     }
