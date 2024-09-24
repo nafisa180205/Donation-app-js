@@ -13,7 +13,7 @@ function toggleSectionId(id){
     historySection.classList.add('hidden')
 
     document.getElementById(id).classList.remove('hidden')
-    document.getElementById(id).classList.add('flex')
+    
 }
 
 
@@ -38,8 +38,8 @@ function getTextFieldValueById(id){
 //     console.log('input pin : ', inputPin)
 
 
-document.getElementById('noakhali-donation-btn').addEventListener('click' , function(e){
-    e.preventDefault()
+document.getElementById('noakhali-donation-btn').addEventListener('click' , function(event){
+    event.preventDefault()
 
     const donationAmount = getInputFieldValueById('noakhali-donation-input')
     const balance =  getTextFieldValueById('total-balance')
@@ -78,7 +78,8 @@ document.getElementById('noakhali-donation-btn').addEventListener('click' , func
 
       document.getElementById('history-section').appendChild(Div)
 
-        return document.getElementById('my_modal_1').showModal()
+         document.getElementById('my_modal_1').showModal()
+        //  document.getElementById('my_modal_1').close()
         
     }
 
